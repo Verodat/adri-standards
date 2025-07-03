@@ -1,0 +1,59 @@
+adri:
+  assessment:
+    caching:
+      enabled: true
+      strategy: content_hash
+      ttl: 24h
+    output:
+      format: json
+      include_raw_scores: false
+      include_recommendations: true
+    performance:
+      max_rows: 1000000
+      timeout: 5m
+  default_environment: development
+  environments:
+    development:
+      paths:
+        assessments: ./ADRI/dev/assessments
+        standards: ./ADRI/dev/standards
+        training_data: ./ADRI/dev/training-data
+      protection:
+        cache_duration_hours: 0.5
+        default_failure_mode: warn
+        default_min_score: 75
+    production:
+      paths:
+        assessments: ./ADRI/prod/assessments
+        standards: ./ADRI/prod/standards
+        training_data: ./ADRI/prod/training-data
+      protection:
+        cache_duration_hours: 24
+        default_failure_mode: raise
+        default_min_score: 85
+  generation:
+    comments:
+      include_domain_suggestions: true
+      include_examples: true
+      include_references: false
+    default_thresholds:
+      completeness_min: 85
+      consistency_min: 80
+      freshness_max_age: 7d
+      plausibility_outlier_threshold: 3.0
+      validity_min: 90
+  logging:
+    backup_count: 5
+    file: .adri/logs/adri.log
+    level: INFO
+    max_size: 10MB
+  project_name: ADRI
+  protection:
+    auto_generate_standards: true
+    cache_duration_hours: 1
+    data_sampling_limit: 1000
+    default_failure_mode: raise
+    default_min_score: 80
+    standard_naming_pattern: '{function_name}_{data_param}_standard.yaml'
+    verbose_protection: false
+  version: '2.0'
