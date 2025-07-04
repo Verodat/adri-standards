@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "last_updated": "2025-07-04T13:55:36.564681Z",
+    "format_version": "1.0.0",
+    "description": "ADRI Validator release tracking for cross-repository coordination"
+  },
+  "current_release": {
+    "package_name": "adri-validator",
+    "version": "0.1.0",
+    "release_type": "Beta",
+    "release_date": "2025-07-04",
+    "is_latest": true,
+    "pypi_url": "https://pypi.org/project/adri/",
+    "github_url": "https://github.com/ThinkEvolveSolve/adri-validator",
+    "installation": "pip install adri==0.1.0"
+  },
+  "releases": [
+    {
+      "package_name": "adri-validator",
+      "version": "0.1.0",
+      "release_type": "Beta",
+      "release_date": "2025-07-04",
+      "is_latest": true,
+      "description": [
+        "Production-ready CI/CD pipeline",
+        "91% test coverage",
+        "Automated version tracking system"
+      ],
+      "breaking_changes": [],
+      "dependencies": {
+        "adri-standards": ">=0.1.0",
+        "pandas": ">=1.5.0",
+        "pyyaml": ">=6.0",
+        "click": ">=8.0",
+        "python": ">=3.8"
+      },
+      "compatibility": {
+        "python_versions": [
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11",
+          "3.12"
+        ],
+        "platforms": [
+          "linux",
+          "macos",
+          "windows"
+        ]
+      }
+    },
+    {
+      "package_name": "adri-validator",
+      "version": "0.1.0",
+      "release_type": "Beta",
+      "release_date": "2025-01-07",
+      "is_latest": false,
+      "description": [
+        "Production-ready CI/CD pipeline",
+        "91% test coverage with comprehensive test suite",
+        "@adri_protected decorator with variants",
+        "Complete CLI workflow (setup, assess, generate)",
+        "Data quality assessment engine",
+        "Configuration management system",
+        "Analysis tools (profiler, generator)",
+        "Full integration with adri-standards"
+      ],
+      "breaking_changes": [],
+      "dependencies": {
+        "adri-standards": ">=0.1.0",
+        "pandas": ">=1.5.0",
+        "pyyaml": ">=6.0",
+        "click": ">=8.0",
+        "python": ">=3.8"
+      },
+      "compatibility": {
+        "python_versions": [
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11",
+          "3.12"
+        ],
+        "platforms": [
+          "linux",
+          "macos",
+          "windows"
+        ]
+      }
+    }
+  ],
+  "installation_guide": {
+    "latest_stable": "pip install adri",
+    "specific_version": "pip install adri==0.1.0",
+    "with_standards": "pip install adri-standards adri",
+    "development": "pip install adri[dev]"
+  }
+}

@@ -6,18 +6,29 @@ This document tracks all releases of the ADRI Validator package. The ADRI Valida
 
 | Package Name | Release Type | Version | Release Date | Latest | Description |
 |--------------|--------------|---------|--------------|--------|-------------|
-| adri-validator | Stable | 1.0.0 | 2025-07-03 | ✅ | • Initial stable release<br>• @adri_protected decorator with variants<br>• Complete CLI workflow (setup, assess, generate)<br>• Data quality assessment engine<br>• Configuration management system<br>• Analysis tools (profiler, generator)<br>• Full integration with adri-standards |
+| adri-validator | Beta | 0.1.0 | 2025-07-04 | ✅ | • Production-ready CI/CD pipeline<br>• 91% test coverage<br>• Automated version tracking system |
+| adri-validator | Beta | 0.1.0 | 2025-01-07 |  | • Production-ready CI/CD pipeline<br>• 91% test coverage with comprehensive test suite<br>• @adri_protected decorator with variants<br>• Complete CLI workflow (setup, assess, generate)<br>• Data quality assessment engine<br>• Configuration management system<br>• Analysis tools (profiler, generator)<br>• Full integration with adri-standards |
 
 ## Installation
 
-### Latest Stable Release
+### Latest Release
 ```bash
-pip install adri-validator==1.0.0
+pip install adri==0.1.0
+```
+
+### Latest (Auto-detect version)
+```bash
+pip install adri
 ```
 
 ### With Standards Dependency
 ```bash
-pip install adri-standards adri-validator
+pip install adri-standards adri
+```
+
+### Development Version
+```bash
+pip install adri[dev]
 ```
 
 ## Quick Start
